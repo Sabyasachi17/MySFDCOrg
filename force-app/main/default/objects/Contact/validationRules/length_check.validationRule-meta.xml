@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>length_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( Department ) &gt; 6</errorConditionFormula>
+    <errorDisplayField>Department</errorDisplayField>
+    <errorMessage>len &gt; 6</errorMessage>
+</ValidationRule>

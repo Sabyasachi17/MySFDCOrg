@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>admin_can_edit</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+AND(ISCHANGED(test__c),  $User.FirstName =&apos;xyz&apos;)
+,False,True)</errorConditionFormula>
+    <errorDisplayField>test__c</errorDisplayField>
+    <errorMessage>Only admin can edit</errorMessage>
+</ValidationRule>
