@@ -12,6 +12,7 @@ public class acc_trig_handler
                 a.Type='Prospect';
                     
                 acc.add(a);
+                System.debug(a);
                 
             }
         } 
