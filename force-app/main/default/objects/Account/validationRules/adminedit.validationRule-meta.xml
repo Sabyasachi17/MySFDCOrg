@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adminedit</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(
+      AND(LOWER(TEXT(test__c))=&apos;test&apos;, $Profile.Name =&apos;System Administrator&apos; &amp;&amp;  $Permission.test1 =False) ,False,True 
+
+   )</errorConditionFormula>
+    <errorMessage>only admin can edit whrn test = test</errorMessage>
+</ValidationRule>
